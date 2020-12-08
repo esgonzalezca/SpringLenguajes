@@ -20,7 +20,6 @@ public class ProductService {
 
 	@PostConstruct
 	public void initDB() {
-		System.out.println("hola");
 		repository.saveAll(Stream.of(new Product(101, "Book", 499.0), new Product(102, "laptop", 78000.0))
 				.collect(Collectors.toList()));
 	}
