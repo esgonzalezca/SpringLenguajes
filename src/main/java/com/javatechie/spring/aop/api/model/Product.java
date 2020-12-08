@@ -2,7 +2,6 @@ package com.javatechie.spring.aop.api.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,8 +14,6 @@ import lombok.ToString;
 @ToString
 
 public class Product {
-	
-	
 	
 	@Id
 	private int id;
@@ -50,6 +47,4 @@ public class Product {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-
-
 }
